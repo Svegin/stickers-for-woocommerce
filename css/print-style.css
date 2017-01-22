@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+.pos_right{right:0px; left:inherit;}
+.pos_left{left:0px; top:0px;}
+.sticker{position:absolute; background-image:url(../images/wli_label_sprite.png); color:transparent; text-indent: -9999px;}
+.new_ribbon_left, .onsale_ribbon_left,.soldout_ribbon_left,.print_ribbon_left{left:0px; top:0px; width: 90px; height: 90px; z-index:99;}
+.new_ribbon_right,.onsale_ribbon_right,.soldout_ribbon_right,.print_ribbon_right{right:0px; top:0px; left:inherit; width: 90px; height: 90px; z-index:99;}
+.new_round_right,.onsale_round_right,.soldout_round_right,.print_round_right{right:0px; top:20px; left:inherit; width: 60px; height: 60px; z-index:99;}
+
+.new_ribbon_left {background-position:-2px -2px;}
+.onsale_ribbon_left {background-position:-2px -111px; z-index:99; }
+.soldout_ribbon_left {background-position:-2px -312px;}
+.print_ribbon_left {background-position:-2px -312px;}
+.new_round_left, .onsale_round_left, .soldout_round_left, .print_round_left{ left: 20px !important; top: 20px !important; width: 50px; height: 50px; z-index:99;}
+.new_round_left,.new_round_right {background-position:-129px -415px; height: 50px;}
+.onsale_round_left,.onsale_round_right {background-position:-65px -415px; height: 50px;}
+.soldout_round_left,.soldout_round_right {background-position:-2px -415px; height: 50px;}
+.print_round_left,.print_round_right {background-position:-2px -480px; height: 50px;}
+.custom_sticker_image{position: absolute; top: 0px; width: 54px; height:54px; border-style: none; background-size:54px auto; text-indent: -9999px;}
+.new_ribbon_right{background-position:-122px -2px;}
+.soldout_ribbon_right{background-position:-122px -313px;}
+.print_ribbon_right{background-position:-122px -213px;}
+.onsale_ribbon_right{background-position:-122px -113px;}
+.pos_right_detail{right: 0;}
+.pos_left_detail{left:0px ;}
+ul li a span.pos_right_detail{right:0px ;}
+@media only screen and (max-width:767px){
+	.pos_right_detail{right:0px ; }
+}
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) { .new_ribbon_right,.onsale_ribbon_right,.soldout_ribbon_right,.print_ribbon_right,.new_round_right,.onsale_round_right,.soldout_round_right,.print_round_right{right:0px !important;}}
