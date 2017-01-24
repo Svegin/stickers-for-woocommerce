@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 .pos_right{right:0px; left:inherit;}
 .pos_left{left:0px; top:0px;}
-.sticker{position:absolute; background-image:url(../images/wli_label_sprite.png); color:transparent; text-indent: -9999px;}
+.sticker{position:absolute; background-image:url(../img/stickers_label_sprite.png); color:transparent; text-indent: -9999px;}
 .new_ribbon_left, .onsale_ribbon_left,.soldout_ribbon_left,.print_ribbon_left{left:0px; top:0px; width: 90px; height: 90px; z-index:99;}
 .new_ribbon_right,.onsale_ribbon_right,.soldout_ribbon_right,.print_ribbon_right{right:0px; top:0px; left:inherit; width: 90px; height: 90px; z-index:99;}
 .new_round_right,.onsale_round_right,.soldout_round_right,.print_round_right{right:0px; top:20px; left:inherit; width: 60px; height: 60px; z-index:99;}
