@@ -1,5 +1,5 @@
 @CHARSET "UTF-8";
-.pos_right{right:0px; left:inherit;}
+/*.pos_right{right:0px; left:inherit;}
 .pos_left{left:0px; top:0px;}
 .sticker{position:absolute; background-image:url(../img/stickers_label_sprite.png); color:transparent; text-indent: -9999px;}
 .new_ribbon_left, .onsale_ribbon_left,.soldout_ribbon_left,.print_ribbon_left{left:0px; top:0px; width: 90px; height: 90px; z-index:99;}
@@ -23,10 +23,45 @@
 .pos_right_detail{right: 0;}
 .pos_left_detail{left:0px ;}
 ul li a span.pos_right_detail{right:0px ;}
+
+
+
 @media only screen and (max-width:767px){
 	.pos_right_detail{right:0px ; }
 }
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
-and (orientation : portrait) { .new_ribbon_right,.onsale_ribbon_right,.soldout_ribbon_right,.print_ribbon_right,.new_round_right,.onsale_round_right,.soldout_round_right,.print_round_right{right:0px !important;}}
+and (orientation : portrait) { .new_ribbon_right,.onsale_ribbon_right,.soldout_ribbon_right,.print_ribbon_right,.new_round_right,.onsale_round_right,.soldout_round_right,.print_round_right{right:0px !important;}}*/
+
+
+
+.ribbon {
+  position: absolute;
+  top: 8px;
+  right: -28px;
+  height: 30px;
+  width: 104px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	text-align: center;
+  }
+  .ribbon:after {
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center !important; }
+  .ribbon.new {
+    background: #E64D39; }
+    .ribbon.new:after {
+      content: 'new'; }
+  .ribbon.free {
+    background: #484848; }
+    .ribbon.free:after {
+      content: 'free'; }
